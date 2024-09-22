@@ -23,7 +23,7 @@
   </ul>
 </p>
 
-### `DSA_Lab3`
+### `DSA_Lab3.cpp`
 <p>In this file there are functions that deals with the doubly linked list.</p>
 <ul>
   <li><strong>InsertAtStart</strong> This function allows to insert the values at the start of the list</li>
