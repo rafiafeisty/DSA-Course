@@ -22,3 +22,15 @@
     <li><strong>sorting</strong> This function sort the list in the ascending order</li>
   </ul>
 </p>
+
+### `DSA_Lab3`
+<p>In this file there are functions that deals with the doubly linked list.</p>
+<ul>
+  <li><strong>InsertAtStart</strong> This function allows to insert the values at the start of the list</li>
+  <li><strong>delete(int val)</strong> This function allows to delete the value by giving the specific value and then searching it in the list if value is found then it deletes it</li>
+  <li><strong>RverseDisplay</strong> This function displays the whole list in the reverse order</li>
+  <li><strong>insertAfterSpecificNode(int index, int val)</strong> This function allows to insert the value after the specific index given by the user</li>
+  <li><strong>totalNodesCount</strong This function displays the total nodes in the list></li>
+  <li><strong>MergeList(List *L1, List* L2)</strong> This function merge the two lists in the intersection manner</li>
+  <li><strong>traverseList</strong> This function displays the list from the start to the end and from the end to the start</li>
+</ul>
