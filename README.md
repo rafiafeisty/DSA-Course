@@ -41,3 +41,11 @@
 <li><strong>pairSum</strong> This function takes a hardcode number and then iterate through the list and tak two numbers from the list in the form of the pair whose sum is equal to the given number</li>
 <li><strong>Partioning</strong> This function takes a hardcode number and sort th list according to the 3 orders that is the numbers less then the given number, numbers equal to the given number and the numbers greater then the given number. This function then returns the node of the temporary list that stores the number is the order and then returns the head node of that list</li>
 </ul>
+
+### `DSA_Lab4.cpp`
+<p>This file contains the functions that deals with the stack. There are stack functions for both the array and the list</p>
+<ul>
+  <li><strong>Stack </strong>class deals with the stack through the array. It contains the function <strong>Pop, Push, isEmpty, and isFull, display</strong> they are used to insert, and take out the values from the stack they also check whether the stack is empty or is full</li>
+  <li><strong>List </strong>class deals with the stack through the list. It contains the function <strong>Pop, Push, isEmpty, and display</strong> they are used to insert, and take out the values from the stack they also check whether the stack is empty</li>
+  <li><strong>isBalanced </strong>This function takes a string then converts it to the characters and store them in the stack after that checks the sequence of the brackets that are being entered by the user</li>
+</ul>
