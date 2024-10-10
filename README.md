@@ -49,3 +49,11 @@
   <li><strong>List </strong>class deals with the stack through the list. It contains the function <strong>Pop, Push, isEmpty, and display</strong> they are used to insert, and take out the values from the stack they also check whether the stack is empty</li>
   <li><strong>isBalanced </strong>This function takes a string then converts it to the characters and store them in the stack after that checks the sequence of the brackets that are being entered by the user</li>
 </ul>
+
+### `DSA_Lab5.cpp`
+<p>This file contains the code related to the <strong>Queue. </strong>There is an implementation of the Queue using both the array and the list</p>
+<ul>
+  <li><strong>Array-Based Queue: </strong>The array based queue is haing the functions used for enque, deque, display, isfull and isempty</li>
+  <li><strong>List-Based Queue: </strong>The list based queue also performs the same functions enque, deque, display, isempty</li>
+  <li><strong>Priority-Based Queue: </strong>In this Queue the lowest value node has the highest precedence. And the deque function is working according to that</li>
+</ul>
