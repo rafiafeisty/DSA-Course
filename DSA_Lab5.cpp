@@ -167,50 +167,53 @@ public:
             countering++;
             return true;
         }
+    }int dequeing(){
+    int comparing=fronting->priority;
+    int index=0;
+    nodeprior *front1=fronting;
+    nodeprior *prev=NULL;
+    int value;
+    int counter=0;
+    while(front1!=NULL){
+        if(comparing > front1->priority){
+            comparing=front1->priority;
+            index=counter;
+        }
+        counter++;
+        prev=front1;
+        front1=front1->next;
     }
-    int dequeing(){
-        int comparing=fronting->priority;
-        int index=0;
-        nodeprior *front1=fronting;
-        int value;
-        int counter=0;
-        while(front1!=NULL){
-            if(comparing > front1->priority){
-                comparing=front1->priority;
-                index=counter;
-            }
-            counter++;
+    front1=fronting;
+    if(index==0){
+        value=fronting->val;
+        fronting=fronting->next;
+        if(fronting==NULL){
+            rear=NULL;
+        }
+    }
+    else if(index==countering-1){
+        int j=0;
+        while(j<index-1){
             front1=front1->next;
+            j++;
         }
-        front1=fronting;
-        if(index==0){
-            value=fronting->val;
-            fronting=fronting->next;
-        }
-        else if(index==countering){
-            int j=0;
-            while(j<index-1){
-                front1=front1->next;
-                j++;
-            }
-            value=front1->val;
-            front1->next=NULL;
-            rear=front1;
-
-        }
-
-        else{
-            front1=fronting;
-            int j=0;
-            while(j<index){
-                front1=front1->next;
-                j++;
-            }
-            value=front1->val;
-            front1->next=front1->next->next;
-        }
-        return value;
+        value=front1->next->val;
+        front1->next=NULL;
+        rear=front1;
     }
+    else{
+        front1=fronting;
+        int j=0;
+        while(j<index-1){
+            front1=front1->next;
+            j++;
+        }
+        value=front1->next->val;
+        front1->next=front1->next->next;
+    }
+    countering--;
+    return value;
+}
     void display(){
         nodeprior *front1=fronting;
         while(front1!=NULL){
@@ -258,7 +261,8 @@ int main(){
     p1->display();
     cout << endl;
     cout << "--------------------" << endl;
-    cout <<"Highest precision Value: " << p1->dequeing();
+    cout <<"Highest precision Value: " << p1->dequeing() << endl;
+    cout <<"Highest precision Value: " << p1->dequeing()<< endl;
     cout << endl;
     cout << "--------------" << endl;
     p1->display();
