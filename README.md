@@ -57,3 +57,6 @@
   <li><strong>List-Based Queue: </strong>The list based queue also performs the same functions enque, deque, display, isempty</li>
   <li><strong>Priority-Based Queue: </strong>In this Queue the lowest value node has the highest precedence. And the deque function is working according to that</li>
 </ul>
+
+### `(Quiz2).cpp`
+<p>In this file there is some problem solved related to the stack and the queue</p>
